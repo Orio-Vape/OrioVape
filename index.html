@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover our exclusive selection of e-liquids, designed to offer you an unforgettable vaping experience. Take advantage of our special offers and enjoy irresistible flavors.">
+    <meta name="keywords" content="Discover our exclusive selection of e-liquids, designed to offer you an unforgettable vaping experience. Take advantage of our special offers and enjoy irresistible flavors.">
+    <meta property="og:title" content="OrioVape">
+    <meta property="og:description" content="Discover our exclusive selection of e-liquids, designed to offer you an unforgettable vaping experience. Take advantage of our special offers and enjoy irresistible flavors.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="OrioVape">
+    <meta name="twitter:description" content="Discover our exclusive selection of e-liquids, designed to offer you an unforgettable vaping experience. Take advantage of our special offers and enjoy irresistible flavors.">
+    <title>OrioVape</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 24 24'%3E%3Cpath d='M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" type="image/svg+xml">
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link href="styles/main.css" rel="stylesheet">
+    <link href="styles/product.css" rel="stylesheet">
+    <link href="styles/cart.css" rel="stylesheet">
+    <link href="styles/auth.css" rel="stylesheet">
+    <link href="styles/profile.css" rel="stylesheet">
+    <link href="styles/modal.css" rel="stylesheet">
+</head>
+<body>
+    <div id="root"></div>
+    <!-- Utils y dependencias primero -->
+    <script type="text/babel" src="utils/supabase.js"></script>
+    <script type="text/babel" src="utils/validation.js"></script>
+    <script type="text/babel" src="utils/cartUtils.js"></script>
+    <script type="text/babel" src="utils/authUtils.js"></script>
+    <!-- Componentes -->
+    <script type="text/babel" src="components/Navbar.js"></script>
+    <script type="text/babel" src="components/Hero.js"></script>
+    <script type="text/babel" src="components/ProductCard.js"></script>
+    <script type="text/babel" src="components/ProductGrid.js"></script>
+    <script type="text/babel" src="components/Cart.js"></script>
+    <script type="text/babel" src="components/Footer.js"></script>
+    <script type="text/babel" src="components/AuthModal.js"></script>
+    <script type="text/babel" src="components/Profile.js"></script>
+    <script type="text/babel" src="components/ProductPreview.js"></script>
+    <script type="text/babel" src="components/UserOrderProfileModal.js"></script>
+    <!-- App principal al final -->
+    <script type="text/babel" src="app.js"></script>
+</body>
+</html>

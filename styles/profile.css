@@ -1,0 +1,128 @@
+.profile-page {
+    min-height: calc(100vh - 64px);
+    background-color: #f8fafc;
+}
+
+.profile-header {
+    background: linear-gradient(to right, #1a1a1a, #4a4a4a);
+    height: 160px;
+    position: relative;
+}
+
+.profile-user-info {
+    position: relative;
+    text-align: center;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.profile-avatar-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: -50px;
+    margin-bottom: 16px;
+    height: 120px;
+}
+
+.profile-avatar {
+    position: static;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    background: #f3f3f3;
+    z-index: 2;
+}
+
+.profile-avatar-edit {
+    position: absolute;
+    bottom: 12px;
+    right: calc(50% - 55px);
+    background-color: #000;
+    color: #fff;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 2px solid #fff;
+    transition: background 0.2s;
+    z-index: 3;
+}
+
+.profile-avatar-edit:hover {
+    background-color: #333;
+}
+
+.profile-tabs {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    border-bottom: 1px solid #e5e7eb;
+    background: white;
+}
+
+.tab-button {
+    padding: 1rem 0;
+    width: 100%;
+    text-align: center;
+    color: #6b7280;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.tab-button:hover {
+    color: #000;
+}
+
+.active-tab {
+    color: #000;
+    border-bottom: 2px solid #000;
+}
+
+.sticky-tabs {
+    position: sticky;
+    top: 64px; /* Height of navbar */
+    z-index: 10;
+}
+
+.profile-tab-content {
+    min-height: 400px;
+}
+
+.profile-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    text-align: center;
+    padding: 1rem;
+    background-color: #f8fafc;
+    border-radius: 0.5rem;
+}
+
+@media (max-width: 640px) {
+    .profile-header {
+        height: 100px;
+    }
+
+    .profile-avatar {
+        width: 80px;
+        height: 80px;
+        top: -40px;
+    }
+
+    .profile-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .tab-button {
+        font-size: 0.875rem;
+        padding: 0.75rem 0;
+    }
+}
